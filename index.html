@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>eo光 今後の手続き＆受け取り 総まとめ</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    background: #f3f6fb;
+    color: #1a2233;
+    font-size: 18px;
+    line-height: 1.8;
+    padding: 16px;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; }
+
+  .hero {
+    background: linear-gradient(135deg, #2fa861, #1a7a44);
+    color: #fff;
+    border-radius: 20px;
+    padding: 28px 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .hero h1 { font-size: 27px; line-height: 1.4; }
+  .hero p { font-size: 16px; margin-top: 8px; opacity: 0.92; }
+
+  .status-banner {
+    display: flex; gap: 14px; flex-wrap: wrap;
+    margin-bottom: 22px;
+  }
+  .status-banner .chip {
+    flex: 1 1 240px;
+    background: #fff; border-radius: 14px; padding: 16px 18px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    border-left: 6px solid #2fa861;
+  }
+  .status-banner .chip .k { font-size: 14px; color: #5a6573; }
+  .status-banner .chip .v { font-size: 20px; font-weight: bold; color: #1f8a4c; }
+  .status-banner .chip.done .v::before { content: "✅ "; }
+
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  }
+  .sec-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1e4e8c;
+    border-left: 8px solid #2b6cb0;
+    padding-left: 12px;
+    margin-bottom: 16px;
+    line-height: 1.4;
+  }
+
+  table { width: 100%; border-collapse: collapse; }
+
+  .info-table { font-size: 17px; }
+  .info-table th {
+    width: 40%; text-align: left; padding: 10px;
+    background: #f0f4fa; color: #334; font-weight: bold;
+    border-bottom: 1px solid #e3e8ef; vertical-align: top;
+  }
+  .info-table td { padding: 10px; border-bottom: 1px solid #e3e8ef; vertical-align: top; }
+  .masked { color: #8893a4; }
+
+  .money-table { font-size: 16px; }
+  .money-table th {
+    background: #1e4e8c; color: #fff; padding: 11px 8px; font-size: 15px; text-align: center;
+  }
+  .money-table th:first-child { text-align: left; }
+  .money-table td { padding: 12px 8px; border-bottom: 1px solid #e3e8ef; text-align: center; }
+  .money-table td:first-child { text-align: left; font-weight: bold; }
+  .money-table .amt { color: #1f8a4c; font-weight: bold; font-size: 18px; }
+  .money-table tr.hot { background: #fff7e6; }
+
+  .deadline {
+    display: flex; gap: 14px; align-items: flex-start;
+    padding: 16px; border-radius: 14px; margin-bottom: 12px;
+    border: 2px solid #cdd7e3; background: #fbfdff;
+  }
+  .deadline.urgent { border-color: #f5a623; background: #fff7e6; }
+  .deadline.critical { border-color: #e0574a; background: #fef2f2; }
+  .deadline.ok { border-color: #2fa861; background: #eef9f1; }
+  .deadline .when {
+    flex: 0 0 130px; text-align: center; font-weight: bold;
+    background: #eef3fa; color: #1e4e8c; border-radius: 10px; padding: 10px 6px;
+    font-size: 15px; line-height: 1.4;
+  }
+  .deadline.urgent .when { background: #f8e6c4; color: #8a5a00; }
+  .deadline.critical .when { background: #f7d4d0; color: #a5271b; }
+  .deadline.ok .when { background: #d6f0df; color: #1a7a44; }
+  .deadline .body .t { font-size: 18px; font-weight: bold; }
+  .deadline .body .d { font-size: 15px; color: #51607a; margin-top: 3px; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: bold;
+    padding: 2px 9px; border-radius: 6px; margin-left: 6px; vertical-align: middle;
+  }
+  .badge.money { background: #2fa861; color: #fff; }
+  .badge.must { background: #e0574a; color: #fff; }
+
+  .todo { list-style: none; }
+  .todo li {
+    display: flex; gap: 13px; align-items: flex-start;
+    padding: 13px 0; border-bottom: 1px solid #eef2f6;
+  }
+  .todo li:last-child { border-bottom: none; }
+  .todo .mark {
+    flex: 0 0 auto; font-size: 15px; font-weight: bold; padding: 3px 10px;
+    border-radius: 8px; white-space: nowrap; margin-top: 2px;
+  }
+  .m-done { background: #d6f0df; color: #1a7a44; }
+  .m-todo { background: #fde8e8; color: #a5271b; }
+  .m-wait { background: #e2e8f0; color: #475569; }
+  .todo .txt { font-size: 17px; }
+  .todo .txt small { display: block; color: #5a6573; font-size: 14px; }
+
+  .pay-table { font-size: 15px; }
+  .pay-table th { background: #1e4e8c; color: #fff; padding: 10px 6px; text-align: center; font-size: 14px; }
+  .pay-table th:first-child { text-align: left; }
+  .pay-table td { padding: 10px 6px; border-bottom: 1px solid #e3e8ef; text-align: center; }
+  .pay-table td:first-child { text-align: left; font-weight: bold; }
+  .pay-table .z { color: #1f8a4c; font-weight: bold; }
+  .pay-table .b { color: #1f8a4c; font-weight: bold; }
+  .pay-table .n { color: #b9740a; font-weight: bold; }
+  .pay-table tr.star { background: #eaf7f0; }
+
+  .keepbox {
+    background: #eef3fa; border: 2px solid #b7cdea; border-radius: 12px;
+    padding: 16px 18px; font-size: 16px; line-height: 1.9;
+  }
+  .keepbox b { color: #1e4e8c; }
+
+  .note { font-size: 14px; color: #5a6573; margin-top: 12px; line-height: 1.7; }
+  .footer { text-align: center; font-size: 14px; color: #8893a4; margin: 22px 0 8px; }
+
+  @media (max-width: 520px) {
+    body { font-size: 16px; padding: 10px; }
+    .hero h1 { font-size: 22px; }
+    .sec-title { font-size: 19px; }
+    .info-table th, .info-table td { font-size: 15px; padding: 8px 7px; }
+    .deadline { flex-direction: column; }
+    .deadline .when { flex: none; width: 100%; }
+    .money-table, .pay-table { font-size: 14px; }
+    .todo .txt { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <h1>eo光 今後の手続き＆受け取り<br>総まとめ</h1>
+    <p>開通日：2026年7月31日　／　管理：ご家族</p>
+  </div>
+
+  <div class="status-banner">
+    <div class="chip done">
+      <div class="k">eo光 開通</div>
+      <div class="v">完了（7/31）</div>
+    </div>
+    <div class="chip done">
+      <div class="k">NURO光 解約</div>
+      <div class="v">完了（7/31）</div>
+    </div>
+    <div class="chip" style="border-left-color:#f5a623;">
+      <div class="k">残るお金の受け取り</div>
+      <div class="v" style="color:#b9740a;">合計 約57,000円 分</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="sec-title">① 契約情報（概要）</div>
+    <table class="info-table">
+      <tr><th>プラン</th><td>eo光シンプルプラン 10ギガコース 戸建て<br><small>契約期間なし・解約金なし</small></td></tr>
+      <tr><th>お客様番号</th><td class="masked">（お手元の控え・eoマイページで確認）</td></tr>
+      <tr><th>契約者</th><td class="masked">（ご契約者さま本人）</td></tr>
+      <tr><th>設置住所</th><td class="masked">実家（詳細は控えに保管）</td></tr>
+      <tr><th>eoID メール</th><td class="masked">（登録メールアドレス）</td></tr>
+      <tr><th>開通日</th><td>2026年7月31日</td></tr>
+      <tr><th>通常月額</th><td>5,500円/月（無線ルーター 105円/月・12か月無料）</td></tr>
+      <tr><th>申込経路</th><td>価格.com専用フォーム</td></tr>
+    </table>
+    <div class="note">※ 個人情報（お客様番号・氏名・住所・メール）は共有用のため伏せています。正式な値は手元の控え／eoマイページにあります。</div>
+  </div>
+
+  <div class="card">
+    <div class="sec-title">② これから受け取るお金（合計 約57,000円分）</div>
+    <table class="money-table">
+      <tr>
+        <th>特典</th><th>金額</th><th>手続き期限の目安</th><th>手続き</th>
+      </tr>
+      <tr class="hot">
+        <td>キャッシュバック</td>
+        <td class="amt">40,000円</td>
+        <td>2028年7月<br>（開通24か月後）</td>
+        <td>Web手続き必須<br><small>★失効注意</small></td>
+      </tr>
+      <tr>
+        <td>他社違約金 補填</td>
+        <td class="amt">最大60,000円<br><small>今回は約14,850円</small></td>
+        <td>2026年12月末<br>（開通月から6か月目末）</td>
+        <td>NURO明細を提出</td>
+      </tr>
+      <tr>
+        <td>3,000円プレゼント</td>
+        <td class="amt">3,000円</td>
+        <td>2026年9月以降に案内<br>（届いてから40日以内）</td>
+        <td>受付番号＋口座をWeb入力（振込）</td>
+      </tr>
+      <tr>
+        <td>スタートキャンペーン</td>
+        <td class="amt">実質 数か月0円</td>
+        <td>自動適用</td>
+        <td>下の③参照</td>
+      </tr>
+    </table>
+    <div class="note">
+      ※「違約金補填」は最大60,000円の枠。今回のNURO解約費用（契約解除料3,500円＋工事費残債10,998円＝<b>約14,850円</b>）がこの枠から戻ってくるイメージです。<br>
+      ※金額・時期は申込時点の目安です。正確な受取方法・期限はeoからの案内メール／eoマイページで必ず確認してください。
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="sec-title">③ 期限カレンダー（開通2026/7/31 基準）</div>
+
+    <div class="deadline ok">
+      <div class="when">✅ 完了</div>
+      <div class="body">
+        <div class="t">eoアプリで「スタートキャンペーン」登録 <span class="badge money">済</span></div>
+        <div class="d">シンプルプランのスタートキャンペーン（月額割引・実質0円期間）は<b>開通前にeoアプリで登録済み</b>。→ 月額割引は有効。<br><small>※これは下段の「違約金補填 最大60,000円」や「3,000円プレゼント」とは別の特典・別手続きです。</small></div>
+      </div>
+    </div>
+
+    <div class="deadline urgent">
+      <div class="when">2026年9月<br>以降</div>
+      <div class="body">
+        <div class="t">3,000円プレゼントの受取手続き <span class="badge money">3,000円</span></div>
+        <div class="d">事前登録は不要。開通の翌々月（2026年9月）以降に<b>「受付番号」がeoメール＋ハガキで届く</b>。案内のWebページで<b>認証キー・振込先口座を入力</b>し、<b>メール送信日から40日以内</b>に手続き完了 → 指定口座へ振込。<b>期限40日と短いので要注意</b>。</div>
+      </div>
+    </div>
+
+    <div class="deadline urgent">
+      <div class="when">〜2026年<br>12月末</div>
+      <div class="body">
+        <div class="t">他社違約金 補填の申請 <span class="badge money">最大60,000円</span></div>
+        <div class="d">開通月を1か月目として<b>6か月目の末日（2026/12/31）まで</b>。<b>NUROの解約金・工事費残債の明細</b>をWebで提出。→ 下の⑤の保管書類を使用。</div>
+      </div>
+    </div>
+
+    <div class="deadline urgent">
+      <div class="when">2026年<br>8月7日(金)</div>
+      <div class="body">
+        <div class="t">NUROの機器（ONU）を返却（集荷予約済み） <span class="badge must">在宅必須</span></div>
+        <div class="d"><b>8/7(金)に集荷を予約済み</b>。当日はご両親が在宅を。ONU本体・電源アダプタ・LANケーブルなど付属品一式をまとめておく。返却しないと機器代を請求されるので注意。</div>
+      </div>
+    </div>
+
+    <div class="deadline critical">
+      <div class="when">2028年<br>7月 ★</div>
+      <div class="body">
+        <div class="t">キャッシュバック 40,000円 の受取手続き <span class="badge money">40,000円</span><span class="badge must">失効注意</span></div>
+        <div class="d">開通24か月後。この月に手続きしないと失効。<b>3か月前（2028/4）・1か月前（2028/6）・当月</b>にアラートを。</div>
+      </div>
+    </div>
+
+    <div class="deadline ok">
+      <div class="when">2028年<br>8月〜</div>
+      <div class="body">
+        <div class="t">次回の乗り換え検討を開始してもOK</div>
+        <div class="d">CB受取後は契約のしばりが無いので、より良い条件があれば再検討できる。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="sec-title">④ 月額の支払いスケジュール（目安）</div>
+    <table class="pay-table">
+      <tr><th>時期</th><th>実質月額</th><th>ポイント</th></tr>
+      <tr><td>2026年8〜9月<br>（1〜2か月目）</td><td class="z">0円</td><td>スタートキャンペーン＋割引で実質ゼロ</td></tr>
+      <tr><td>2026年10月<br>（3か月目）</td><td class="b">−3,000円</td><td>3,000円プレゼント受取で実質マイナス</td></tr>
+      <tr><td>2026年11月〜2027年1月<br>（4〜6か月目）</td><td class="z">0円</td><td>スタートキャンペーン継続</td></tr>
+      <tr><td>2027年2〜7月<br>（7〜12か月目）</td><td>500円/月</td><td>500円割引が終了</td></tr>
+      <tr><td>2027年8月〜2028年6月<br>（13〜23か月目）</td><td class="n">5,500円/月</td><td>通常月額へ（無線ルーター料も開始）。一番高く感じる時期</td></tr>
+      <tr class="star"><td>2028年7月 ★<br>（24か月目）</td><td class="b">−34,500円</td><td>CB 40,000円受取（手続き必須）で大きく戻る</td></tr>
+      <tr><td>2028年8月〜<br>（25か月目〜）</td><td class="n">5,500円/月</td><td>工事費分割も完了・通常月額のみ</td></tr>
+    </table>
+    <div class="note">
+      ※ 2年間ならすと実質 約1,135円/月、3年間ならすと実質 約2,600円/月。<br>
+      ※ 工事費29,700円は分割払い＋割引で毎月相殺され、途中解約しない限り実質0円。<br>
+      ※ 金額はすべて申込時点の目安。請求はeoマイページで確認を。
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="sec-title">⑤ やることチェックリスト</div>
+    <ul class="todo">
+      <li><span class="mark m-done">完了</span><span class="txt">eo光 開通（2026/7/31）</span></li>
+      <li><span class="mark m-done">完了</span><span class="txt">NURO光 解約手続き（2026/7/31）</span></li>
+      <li><span class="mark m-todo">要対応</span><span class="txt">NUROの解約費用の明細を保管<small>契約解除料3,500円・工事費残債10,998円が分かる画面/請求書 → 違約金補填の申請に使う</small></span></li>
+      <li><span class="mark m-done">完了</span><span class="txt">eoアプリでスタートキャンペーン登録（開通前に対応済み）</span></li>
+      <li><span class="mark m-todo">未</span><span class="txt">3,000円プレゼントの受取（2026年9月以降に受付番号→40日以内にWeb手続き・振込）</span></li>
+      <li><span class="mark m-todo">未</span><span class="txt">他社違約金 補填の申請（2026年12月末まで）</span></li>
+      <li><span class="mark m-wait">8/7集荷</span><span class="txt">NURO機器（ONU）の返却（2026/8/7 金・集荷予約済み／当日在宅）</span></li>
+      <li><span class="mark m-todo">未</span><span class="txt">キャッシュバック 40,000円 の受取（2028年7月）<small>3か月前・1か月前・当月にアラート登録</small></span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="sec-title">⑥ 保管しておく書類・情報</div>
+    <div class="keepbox">
+      ・<b>NURO解約費用の明細</b>（契約解除料3,500円／工事費残債10,998円の画面キャプチャ・請求書）<br>
+      ・<b>eoの申込完了メール／キャンペーン内容の案内メール</b><br>
+      ・<b>eoID・お客様番号</b>とログイン情報（控えに保管）<br>
+      ・NURO最終請求書（8月頃に届く見込み）<br>
+      <span style="font-size:14px; color:#5a6573;">→ これらは「違約金補填」と「3,000円プレゼント」「CB受取」で必要になります。</span>
+    </div>
+  </div>
+
+  <div class="footer">
+    作成：2026年7月31日（最終更新：2026年8月1日）<br>
+    金額・時期はいずれも目安です。正確な内容はeoマイページ・案内メールで確認してください。
+  </div>
+
+</div>
+</body>
+</html>
